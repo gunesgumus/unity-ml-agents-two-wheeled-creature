@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class WheelColliderVisual : MonoBehaviour
+namespace GNMS.TwoWheeledCreature
 {
-	WheelCollider wheelCollider;
-
-	private void Awake()
+	public class WheelColliderVisual : MonoBehaviour
 	{
-		this.wheelCollider = this.GetComponentInParent<WheelCollider>();
-	}
+		WheelCollider wheelCollider;
 
-	private void Update()
-	{
-		this.wheelCollider.GetWorldPose(out Vector3 wheelPosition, out Quaternion wheelRotation);
-		this.transform.position = wheelPosition;
-		this.transform.rotation = wheelRotation;
+		private void Awake()
+		{
+			this.wheelCollider = this.GetComponentInParent<WheelCollider>();
+		}
+
+		private void Update()
+		{
+			this.wheelCollider.GetWorldPose(out Vector3 wheelPosition, out Quaternion wheelRotation);
+			this.transform.position = wheelPosition;
+			this.transform.rotation = wheelRotation;
+		}
 	}
 }

@@ -1,10 +1,13 @@
 using UnityEngine;
 
-[RequireComponent(typeof(WheelCollider))]
-public class WakeUpWheelCollider : MonoBehaviour
+namespace GNMS.TwoWheeledCreature
 {
-	private void Start()
+	[RequireComponent(typeof(WheelCollider))]
+	public class WakeUpWheelCollider : MonoBehaviour
 	{
-		this.GetComponent<WheelCollider>().motorTorque = 0.01f;
+		private void Start()
+		{
+			this.GetComponent<WheelCollider>().motorTorque = 0.01f;
+		}
 	}
 }

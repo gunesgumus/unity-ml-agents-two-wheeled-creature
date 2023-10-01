@@ -1,13 +1,16 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody))]
-public class MaxAngularSpeedSetter : MonoBehaviour
+namespace GNMS.TwoWheeledCreature
 {
-	[SerializeField]
-	float maxAngularSpeed = 50.0f;
-
-	private void Awake()
+	[RequireComponent(typeof(Rigidbody))]
+	public class MaxAngularSpeedSetter : MonoBehaviour
 	{
-		this.GetComponent<Rigidbody>().maxAngularVelocity = maxAngularSpeed;
+		[SerializeField]
+		float maxAngularSpeed = 50.0f;
+
+		private void Awake()
+		{
+			this.GetComponent<Rigidbody>().maxAngularVelocity = maxAngularSpeed;
+		}
 	}
 }

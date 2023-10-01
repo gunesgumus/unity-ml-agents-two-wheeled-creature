@@ -170,6 +170,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1581866794337979739}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5910437085678492303}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5822930429401026520}
     - targetCorrespondingSourceObject: {fileID: -3382930829689383914, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4769242645012289210}
@@ -360,6 +366,75 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1449548457463035716}
   m_SourcePrefab: {fileID: 100100000, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
+--- !u!1 &624388451816353030 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
+  m_PrefabInstance: {fileID: 318396769443745879}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5910437085678492303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624388451816353030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1c4e0b1822b495aa52bc52839ecb30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BrainParameters:
+    VectorObservationSize: 195
+    NumStackedVectorObservations: 1
+    m_ActionSpec:
+      m_NumContinuousActions: 0
+      BranchSizes: 
+    VectorActionSize: 
+    VectorActionDescriptions: []
+    VectorActionSpaceType: 0
+    hasUpgradedBrainParametersWithActionSpec: 1
+  m_Model: {fileID: 0}
+  m_InferenceDevice: 0
+  m_BehaviorType: 0
+  m_BehaviorName: My Behavior
+  TeamId: 0
+  m_UseChildSensors: 1
+  m_UseChildActuators: 1
+  m_ObservableAttributeHandling: 0
+--- !u!114 &5822930429401026520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624388451816353030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edfc4be73bb4e3846b10ef567b6c3269, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+  hasUpgradedFromAgentParameters: 1
+  MaxStep: 0
+  observationProviders:
+  - {fileID: 8442780377157530398}
+  - {fileID: 5673595219195544832}
+  - {fileID: 1758266743291256282}
+  - {fileID: 5792398899429986314}
+  - {fileID: 5298614822828869095}
+  - {fileID: 9029534406860595687}
+  - {fileID: 3506131904916950952}
+  - {fileID: 6633834714045525318}
+  - {fileID: 4366190654682669743}
+  - {fileID: 3379742272961137410}
+  - {fileID: 6607217083486438614}
+  - {fileID: 5175575087181558815}
+  - {fileID: 2067445659597379661}
+  - {fileID: 500547676729583890}
+  - {fileID: 2933461858946277039}
+  actionReceivers: []
+  rewardProviders: []
 --- !u!1 &1143081762930721792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8379467303080356777, guid: 92e7b05465d06024eb2ec9a7b5ecd069, type: 3}
@@ -404,9 +479,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!153 &7289709501006431676
 ConfigurableJoint:
@@ -567,9 +644,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &4254365720234992932
 CapsuleCollider:
@@ -761,9 +840,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &1831884874002550504
 CapsuleCollider:
@@ -955,9 +1036,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!153 &3628081439631993368
 ConfigurableJoint:
@@ -1118,9 +1201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &4518446410205276831
 CapsuleCollider:
@@ -1291,9 +1376,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &4254111370540821168
 CapsuleCollider:
@@ -1464,9 +1551,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &8474306476535276565
 CapsuleCollider:
@@ -1637,9 +1726,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &4467640461178471495
 CapsuleCollider:
@@ -1820,9 +1911,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &6006783896641645682
 CapsuleCollider:
@@ -1993,9 +2086,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &2119034904294857774
 CapsuleCollider:
@@ -2166,9 +2261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &3658886397966203913
 CapsuleCollider:
@@ -2360,9 +2457,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trackLocalPosition: 1
+  trackPosition: 1
+  trackRotation: 1
+  trackLocalPosition: 0
+  trackLocalRotation: 0
   trackVelocity: 1
-  trackLocalRotation: 1
   trackAngularVelocity: 1
 --- !u!135 &5802436322622267913
 SphereCollider:
@@ -2450,9 +2549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &7106372707862315448
 CapsuleCollider:
@@ -2623,9 +2724,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &7385138975921128140
 CapsuleCollider:
@@ -2796,9 +2899,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f4b57e2016f15245a9635bd292a4aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trackPosition: 0
+  trackRotation: 0
   trackLocalPosition: 1
-  trackVelocity: 1
   trackLocalRotation: 1
+  trackVelocity: 1
   trackAngularVelocity: 1
 --- !u!136 &2699053394288659005
 CapsuleCollider:
