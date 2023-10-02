@@ -26,6 +26,8 @@ namespace GNMS.TwoWheeledCreature
 				discreteActions[thisDiscreteIndex] = actions.DiscreteActions[discreteActionIndex];
 				discreteActionIndex++;
 			}
+
+			this.Act(continuousActions, discreteActions);
 		}
 
 		public abstract void Act(float[] continuousActions, int[] discreteActions);

@@ -20,10 +20,15 @@ namespace GNMS.TwoWheeledCreature
 		ActionReceiver[] actionReceivers;
 		[SerializeField]
 		RewardProvider[] rewardProviders;
+		[SerializeField]
+		EpisodeBeginHandler[] episodeBeginHandlers;
 
 		public override void OnEpisodeBegin()
 		{
-
+			foreach (EpisodeBeginHandler episodeBeginHandler in this.episodeBeginHandlers)
+			{
+				episodeBeginHandler.HandleEpisodeBegin();
+			}
 		}
 
 		public override void CollectObservations(VectorSensor sensor)
@@ -73,7 +78,9 @@ namespace GNMS.TwoWheeledCreature
 					totalContinuousActionSpaceSize += nextReceiver.ContinuousActionSpaceSize);
 			int[] discreteActionBranchSizes = this.actionReceivers
 				.Aggregate(new int[0], (branchSizes, nextReceiver) =>
-					branchSizes.Concat(nextReceiver.DiscreteActionBranchSizes).ToArray());
+					nextReceiver.DiscreteActionBranchSizes != null ?
+						branchSizes.Concat(nextReceiver.DiscreteActionBranchSizes).ToArray() :
+						branchSizes);
 			BehaviorParameters behaviorParameters = this.GetComponent<BehaviorParameters>();
 
 			ActionSpec actionSpec = behaviorParameters.BrainParameters.ActionSpec;
@@ -87,6 +94,12 @@ namespace GNMS.TwoWheeledCreature
 		{
 			Undo.RecordObject(this, "Refreshed Reward Providers for Creature Agent");
 			this.rewardProviders = this.GetComponentsInChildren<RewardProvider>();
+		}
+
+		public void RefreshEpisodeBeginHandlers()
+		{
+			Undo.RecordObject(this, "Refreshed Episode Begin Handlers for Creature Agent");
+			this.episodeBeginHandlers = this.GetComponentsInChildren<EpisodeBeginHandler>();
 		}
 	}
 }

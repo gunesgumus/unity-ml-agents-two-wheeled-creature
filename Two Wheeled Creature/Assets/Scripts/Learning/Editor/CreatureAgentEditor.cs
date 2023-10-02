@@ -13,6 +13,13 @@ namespace GNMS.TwoWheeledCreature
 		{
 			CreatureAgent creatureAgent = target as CreatureAgent;
 
+			int newMaxStep = EditorGUILayout.IntField("Agent max step:", creatureAgent.MaxStep);
+			if (newMaxStep != creatureAgent.MaxStep)
+			{
+				Undo.RecordObject(creatureAgent, "Updated Creature Agent's Max Step");
+				creatureAgent.MaxStep = newMaxStep;
+			}
+
 			DrawDefaultInspector();
 
 			if (GUILayout.Button("Refresh Observation Providers"))
@@ -28,6 +35,11 @@ namespace GNMS.TwoWheeledCreature
 			if (GUILayout.Button("Refresh Reward Providers"))
 			{
 				creatureAgent.RefreshRewardProviders();
+			}
+
+			if (GUILayout.Button("Refresh Episode Begin Handlers"))
+			{
+				creatureAgent.RefreshEpisodeBeginHandlers();
 			}
 		}
 	}
