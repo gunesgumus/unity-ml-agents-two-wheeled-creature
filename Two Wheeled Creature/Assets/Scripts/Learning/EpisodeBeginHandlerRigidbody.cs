@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	public class EpisodeBeginHandlerRigidbody : EpisodeBeginHandler
 	{

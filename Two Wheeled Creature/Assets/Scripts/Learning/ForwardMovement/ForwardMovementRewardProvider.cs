@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.MLAgents;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning.ForwardMovement
 {
 	[RequireComponent(typeof(Rigidbody))]
 	public class ForwardMovementRewardProvider : RewardProvider

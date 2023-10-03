@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	[RequireComponent(typeof(Rigidbody)), DisallowMultipleComponent]
 	public class ObservedRigidbody : ObservationProvider

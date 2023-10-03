@@ -1,9 +1,10 @@
+using GNMS.TwoWheeledCreature.Physics;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.MLAgents.Sensors;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	public class ObservedGroundTouch : ObservationProvider
 	{

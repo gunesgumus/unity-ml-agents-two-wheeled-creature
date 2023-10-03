@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Physics
 {
 	[RequireComponent(typeof(Rigidbody))]
 	public class MaxAngularSpeedSetter : MonoBehaviour

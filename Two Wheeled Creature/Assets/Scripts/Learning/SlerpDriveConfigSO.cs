@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	[CreateAssetMenu(fileName = "Slerp Drive Config", menuName = "Two Wheeled Creature/Slerp Drive Configuration")]
 	public class SlerpDriveConfigSO : ScriptableObject

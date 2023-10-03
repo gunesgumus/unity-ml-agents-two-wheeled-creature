@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.TerrainTools;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	[CustomEditor(typeof(CreatureAgent))]
 	public class CreatureAgentEditor : Editor

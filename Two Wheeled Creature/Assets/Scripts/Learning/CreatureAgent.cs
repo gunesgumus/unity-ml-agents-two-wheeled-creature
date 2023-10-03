@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Learning
 {
 	[RequireComponent(typeof(BehaviorParameters))]
 	public class CreatureAgent : Agent

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace GNMS.TwoWheeledCreature
+namespace GNMS.TwoWheeledCreature.Physics
 {
 	public class WheelColliderVisual : MonoBehaviour
 	{
