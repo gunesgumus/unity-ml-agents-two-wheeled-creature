@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace GNMS.TwoWheeledCreature.Learning.ForwardMovement
 {
-	[RequireComponent(typeof(Rigidbody))]
+	[RequireComponent(typeof(Rigidbody)), DisallowMultipleComponent()]
 	public class ForwardMovementRewardProvider : RewardProvider
 	{
 		Rigidbody body;

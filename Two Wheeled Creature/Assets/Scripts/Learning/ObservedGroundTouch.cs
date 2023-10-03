@@ -10,7 +10,7 @@ namespace GNMS.TwoWheeledCreature.Learning
 	{
 		Ground groundInTouch = null;
 
-		bool IsGrounded => this.groundInTouch != null;
+		public bool IsGrounded => this.groundInTouch != null;
 
 		public override int ObservationSpaceSize => 1;
 
