@@ -1,0 +1,65 @@
+{
+    "StandStraightRestrictedMovement": {
+        "checkpoints": [
+            {
+                "steps": 14499696,
+                "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-14499696.onnx",
+                "reward": 3812.1150716145835,
+                "creation_time": 1696730115.741385,
+                "auxillary_file_paths": [
+                    "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-14499696.pt"
+                ]
+            },
+            {
+                "steps": 14999552,
+                "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-14999552.onnx",
+                "reward": null,
+                "creation_time": 1696730570.7101252,
+                "auxillary_file_paths": [
+                    "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-14999552.pt"
+                ]
+            },
+            {
+                "steps": 15499264,
+                "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-15499264.onnx",
+                "reward": null,
+                "creation_time": 1696731045.7765348,
+                "auxillary_file_paths": [
+                    "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-15499264.pt"
+                ]
+            },
+            {
+                "steps": 15999024,
+                "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-15999024.onnx",
+                "reward": 2558.2388817571823,
+                "creation_time": 1696731483.5946832,
+                "auxillary_file_paths": [
+                    "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-15999024.pt"
+                ]
+            },
+            {
+                "steps": 16032768,
+                "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-16032768.onnx",
+                "reward": null,
+                "creation_time": 1696731535.5139556,
+                "auxillary_file_paths": [
+                    "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-16032768.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 16032768,
+            "file_path": "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement.onnx",
+            "reward": null,
+            "creation_time": 1696731535.5139556,
+            "auxillary_file_paths": [
+                "results\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement\\StandStraightRestrictedMovement-16032768.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
