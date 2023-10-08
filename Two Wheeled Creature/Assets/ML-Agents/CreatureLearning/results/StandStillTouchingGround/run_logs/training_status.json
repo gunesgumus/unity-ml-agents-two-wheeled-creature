@@ -1,0 +1,65 @@
+{
+    "StandStillTouchingGround": {
+        "checkpoints": [
+            {
+                "steps": 16999856,
+                "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-16999856.onnx",
+                "reward": 343691.265625,
+                "creation_time": 1696769175.5530226,
+                "auxillary_file_paths": [
+                    "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-16999856.pt"
+                ]
+            },
+            {
+                "steps": 17499584,
+                "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-17499584.onnx",
+                "reward": null,
+                "creation_time": 1696769758.0197177,
+                "auxillary_file_paths": [
+                    "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-17499584.pt"
+                ]
+            },
+            {
+                "steps": 17999296,
+                "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-17999296.onnx",
+                "reward": null,
+                "creation_time": 1696770233.174749,
+                "auxillary_file_paths": [
+                    "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-17999296.pt"
+                ]
+            },
+            {
+                "steps": 18499152,
+                "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-18499152.onnx",
+                "reward": 336868.7225215517,
+                "creation_time": 1696770670.6707551,
+                "auxillary_file_paths": [
+                    "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-18499152.pt"
+                ]
+            },
+            {
+                "steps": 18598848,
+                "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-18598848.onnx",
+                "reward": null,
+                "creation_time": 1696770768.613535,
+                "auxillary_file_paths": [
+                    "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-18598848.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 18598848,
+            "file_path": "results\\StandStillTouchingGround\\StandStillTouchingGround.onnx",
+            "reward": null,
+            "creation_time": 1696770768.613535,
+            "auxillary_file_paths": [
+                "results\\StandStillTouchingGround\\StandStillTouchingGround\\StandStillTouchingGround-18598848.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

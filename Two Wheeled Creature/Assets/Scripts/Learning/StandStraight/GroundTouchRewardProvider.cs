@@ -8,9 +8,9 @@ namespace GNMS.TwoWheeledCreature.Learning.StandStraight
 	[RequireComponent(typeof(ObservedGroundTouch)), DisallowMultipleComponent()]
 	public class GroundTouchRewardProvider : RewardProvider
 	{
-		[SerializeField, Tooltip("Reward amount per step for touching ground"), Min(0)]
+		[SerializeField, Tooltip("Reward amount per step for touching ground")]
 		float groundTouchReward = 0.1f;
-		[SerializeField, Tooltip("Penalty amount per step for missing ground"), Min(0)]
+		[SerializeField, Tooltip("Penalty amount per step for missing ground")]
 		float groundMissPenalty = 0.1f;
 
 		ObservedGroundTouch observedGroundTouch;
